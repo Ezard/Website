@@ -5,6 +5,43 @@
 $primary: mat-palette($mat-blue-grey);
 $accent: mat-palette($mat-orange);
 
-$theme: mat-light-theme($primary, $accent);
+$theme: mat-dark-theme($primary, $accent);
 
 @include angular-material-theme($theme);
+
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+app-root, md-sidenav-container, div.content{
+    width: 100%;
+    height: 100%;
+}
+
+md-sidenav-container{
+    ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding-right: 30px;
+        line-height: 64px;
+
+        li{
+            float: left;
+            margin-left: 30px;
+            list-style: none;
+            cursor: pointer;
+            transition: color 100ms;
+
+            &.current, &:hover{
+                color: mat-color($accent);
+            }
+
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
