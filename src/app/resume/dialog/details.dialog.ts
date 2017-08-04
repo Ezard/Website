@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {MdDialogRef} from '@angular/material';
-import {Item} from '../resume.component';
+import {Item} from '../../shared/item';
 
 @Component({
     selector: 'app-details-dialog',
