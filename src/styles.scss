@@ -36,3 +36,21 @@ md-sidenav-container{
         }
     }
 }
+
+md-card.title{
+    left: 50%;
+    top: 20px;
+    width: 1000px;
+    transform: translateX(-500px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+    h1{
+        font-size: inherit;
+        font-weight: inherit;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-start: 0;
+        -webkit-margin-end: 0;
+    }
+}
