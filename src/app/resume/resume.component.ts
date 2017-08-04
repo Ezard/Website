@@ -1,6 +1,8 @@
 import {Component} from '@angular/core';
 import {MdDialog} from '@angular/material';
 import {DetailsDialogComponent} from './dialog/details.dialog';
+import {Section} from '../shared/section';
+import {Item} from '../shared/item';
 
 @Component({
     selector: 'app-resume',
@@ -164,15 +166,4 @@ export class ResumeComponent {
         const dialogRef = this.dialog.open(DetailsDialogComponent);
         dialogRef.componentInstance.data = item;
     }
-}
-
-class Section {
-    constructor(public title: string, public items: Item[]) {
-    }
-}
-
-export class Item {
-    constructor(public title?: string, public desc?: string, public period?: string, public details?: string[]) {
-    }
-
 }
