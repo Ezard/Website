@@ -1,0 +1,113 @@
+<div class="resume">
+	<div *ngFor="let datum of data">
+		<md-card>
+			<md-card-title>{{datum.title}}</md-card-title>
+			<md-card-content *ngIf="datum.items">
+				<md-list>
+					<md-list-item *ngFor="let item of datum.items">
+						<h4 md-line *ngIf="item.title">{{item.title}}</h4>
+						<p md-line *ngIf="item.desc">{{item.desc}}</p>
+						<p md-line *ngIf="item.period">{{item.period}}</p>
+						<p md-line *ngIf="item.details" class="details" (click)="openDialog(item)">More details</p>
+					</md-list-item>
+				</md-list>
+			</md-card-content>
+		</md-card>
+	</div>
+	<!--<div>
+		<md-card style="display: inline-block">
+			<md-card-title>
+				Education
+			</md-card-title>
+			<md-card-content>
+				<md-list>
+					<md-list-item>
+						<h4 md-line>University of York</h4>
+						<p md-line>BSc Computer Systems</p>
+						<p md-line>2013 - 2017</p>
+					</md-list-item>
+					<md-list-item>
+						<h4 md-line>Calday Grange Grammar School</h4>
+						<p md-line>2005 - 2013</p>
+					</md-list-item>
+				</md-list>
+			</md-card-content>
+		</md-card>
+	</div>
+	<div>
+		<md-card>
+			<md-card-title>
+				Related Experience
+			</md-card-title>
+			<md-card-content>
+				<md-list>
+					<md-list-item>
+						<h4 md-line>Philips Research UK</h4>
+						<p md-line>2015 - 2016</p>
+					</md-list-item>
+					<md-list-item>
+						<h4 md-line>University of York DevSoc</h4>
+						<p md-line>2014 - 2015</p>
+					</md-list-item>
+					<md-list-item>
+						<h4 md-line>Warframe Utility</h4>
+						<p md-line>2013 - 2016</p>
+					</md-list-item>
+				</md-list>
+			</md-card-content>
+		</md-card>
+	</div>
+	<div>
+		<md-card>
+			<md-card-title>
+				Other Experience
+			</md-card-title>
+			<md-card-content>
+				<md-list>
+					<md-list-item>
+						<h4 md-line>Goodricke College, University of York</h4>
+						<p md-line>2013 - 2015</p>
+					</md-list-item>
+				</md-list>
+			</md-card-content>
+		</md-card>
+	</div>
+	<div>
+		<md-card>
+			<md-card-title>
+				Qualifications
+			</md-card-title>
+			<md-card-content>
+			</md-card-content>
+		</md-card>
+	</div>
+	<div>
+		<md-card>
+			<md-card-title>
+				Interests
+			</md-card-title>
+			<md-card-content>
+				<md-list>
+					<md-list-item>
+						<p md-line>Game development/design</p>
+					</md-list-item>
+					<md-list-item>
+						<p md-line>Mobile application development</p>
+					</md-list-item>
+					<md-list-item>
+						<p md-line>Artificial intelligence</p>
+					</md-list-item>
+					<md-list-item>
+						<p md-line>Web development</p>
+					</md-list-item>
+					<md-list-item>
+						<p md-line>Music (play piano)</p>
+					</md-list-item>
+					<md-list-item>
+						<p md-line>Sports such as skiing, rock climbing and squash</p>
+					</md-list-item>
+				</md-list>
+			</md-card-content>
+		</md-card>
+	</div>-->
+</div>

@@ -1,0 +1,7 @@
+<md-card>
+	<md-card-title>{{data.title}}</md-card-title>
+	<md-card-subtitle>{{data.period}}</md-card-subtitle>
+	<md-card-content>
+		<p *ngFor="let item of data.details">{{item}}</p>
+	</md-card-content>
+</md-card>

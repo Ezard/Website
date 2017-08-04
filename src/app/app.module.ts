@@ -1,13 +1,16 @@
 import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {MdSidenavModule, MdToolbarModule} from '@angular/material';
+import {MdCardModule, MdDialogModule, MdListModule, MdSidenavModule, MdToolbarModule} from '@angular/material';
 import {RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {PortfolioComponent} from './portfolio/portfolio.component';
 import {ResumeComponent} from './resume/resume.component';
 import {ContactComponent} from './contact/contact.component';
+import {DetailsDialogComponent} from './resume/dialog/details.dialog';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
     declarations: [
@@ -15,10 +18,16 @@ import {ContactComponent} from './contact/contact.component';
         HomeComponent,
         PortfolioComponent,
         ResumeComponent,
-        ContactComponent
+        ContactComponent,
+        DetailsDialogComponent
     ],
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
+        CommonModule,
+        MdCardModule,
+        MdDialogModule,
+        MdListModule,
         MdSidenavModule,
         MdToolbarModule,
         RouterModule.forRoot([
@@ -41,7 +50,8 @@ import {ContactComponent} from './contact/contact.component';
         ])
     ],
     providers: [],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
+    entryComponents: [DetailsDialogComponent]
 })
 export class AppModule {
 }

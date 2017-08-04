@@ -1,0 +1,32 @@
+@import '../../theming';
+
+$width: 1000px;
+
+div.resume{
+    position: relative;
+    top: 20px;
+    left: 50%;
+    width: $width;
+    transform: translateX(-($width / 2));
+    margin-bottom: 10px; columns: 2 auto;
+
+    md-card{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+
+        h4{
+            color: mat-color($accent);
+            margin-bottom: 5px;
+        }
+        p{
+            margin-bottom: 5px;
+        }
+    }
+
+    p.details{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
