@@ -1,0 +1,19 @@
+@import '../../theming';
+
+$width: 1000px;
+
+md-card:not(.title){
+    left: 50%;
+    top: 20px;
+    width: $width;
+    transform: translateX(-($width / 2));
+    box-sizing: border-box;
+
+    span{
+        color: mat-color($accent);
+    }
+
+    a{
+        color: white;
+    }
+}
