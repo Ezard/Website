@@ -1,0 +1,26 @@
+<md-card class="title">
+	<md-card-title><h1>Portfolio</h1></md-card-title>
+</md-card>
+<md-card *ngFor="let datum of data">
+	<md-card-title>{{datum.title}}</md-card-title>
+	<md-card-content>
+		<div class="item" *ngFor="let item of datum.items">
+			<h3>{{item.title}}</h3>
+			<div class="details">
+				<p *ngIf="item.languages"><strong>Languages:</strong></p>
+				<p *ngIf="item.frameworks"><strong>Frameworks:</strong></p>
+				<p *ngIf="item.other"><strong>Other:</strong></p>
+			</div>
+			<div class="details">
+				<p *ngIf="item.languages">{{item.languages}}</p>
+				<p *ngIf="item.frameworks">{{item.frameworks}}</p>
+				<p *ngIf="item.other">{{item.other}}</p>
+				<p *ngIf="item.url"></p>
+			</div>
+			<p *ngFor="let link of item.links" class="link"><strong><a href="{{link.url}}">{{link.text}}</a></strong></p>
+			<ul class="desc">
+				<li *ngFor="let desc of item.description">{{desc}}</li>
+			</ul>
+		</div>
+	</md-card-content>
+</md-card>
