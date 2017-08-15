@@ -7,7 +7,18 @@ div.toolbar-content{
     transform: translateX(-500px);
 
     h1{
+        display: inline-block;
         padding-left: 20px;
+        cursor: pointer;
+        transition: color 100ms;
+
+        &:hover{
+            color: mat-color($accent);
+        }
+
+        &:focus{
+            outline: none;
+        }
     }
 }
 
