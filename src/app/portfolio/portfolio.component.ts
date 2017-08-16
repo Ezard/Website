@@ -20,6 +20,10 @@ export class PortfolioComponent {
                         {
                             url: 'https://8bitwarframe.com/download',
                             text: 'Download (8bitwarframe.com)'
+                        },
+                        {
+                            url: 'https://github.com/8-Bit-Warframe',
+                            text: 'Source (GitHub)'
                         }
                     ],
                     description: [
@@ -74,6 +78,10 @@ export class PortfolioComponent {
                         {
                             url: 'https://8bitwarframe.com',
                             text: 'Link (8bitwarframe.com)'
+                        },
+                        {
+                            url: 'https://github.com/8-Bit-Warframe/Server',
+                            text: 'Source (GitHub)'
                         }
                     ],
                     description: [
@@ -93,6 +101,10 @@ export class PortfolioComponent {
                         {
                             url: 'http://verminguide.com/',
                             text: 'Link (verminguide.com)'
+                        },
+                        {
+                            url: 'https://github.com/Ezard/Verminguide',
+                            text: 'Source (GitHub)'
                         }
                     ],
                     description: [
