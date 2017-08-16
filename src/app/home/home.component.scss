@@ -1,0 +1,13 @@
+@import "../../theming";
+
+md-card:not(.title){
+    left: 50%;
+    top: 20px;
+    width: 1000px;
+    transform: translateX(-500px);
+    box-sizing: border-box;
+
+    a{
+        color: mat-color($accent);
+    }
+}
