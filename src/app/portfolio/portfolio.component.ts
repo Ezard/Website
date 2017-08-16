@@ -96,7 +96,7 @@ export class PortfolioComponent {
                 {
                     title: 'Verminguide',
                     languages: 'Javascript, Node.js, Lua, SQL',
-                    frameworks: 'Express.js, MySQL',
+                    frameworks: 'Express.js, MySQL, Handlebars.js',
                     links: [
                         {
                             url: 'http://verminguide.com/',
@@ -109,6 +109,7 @@ export class PortfolioComponent {
                     ],
                     description: [
                         'Wiki-style website for the game "Warhammer: End Times - Vermintide"',
+                        '"Home-grown" SPA solution using Javascript and Handlebars templates',
                         'Parsed Lua game scripts to obtain data such as weapon statistics',
                         'Development ceased due to decreased player-base of Vermintide'
                     ]
