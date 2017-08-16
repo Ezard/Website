@@ -113,6 +113,7 @@ export class ResumeComponent {
                         'C# (mainly pertaining to use with Unity3D)',
                         'Python',
                         'PHP',
+                        'Lua',
                         'Javascript (including variations such as Node.js and Typescript)',
                         'C++ (not "proficient" as of yet, but an area of active improvement)'
                     ]
