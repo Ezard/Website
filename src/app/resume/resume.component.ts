@@ -119,11 +119,12 @@ export class ResumeComponent {
                     ]
                 },
                 {
-                    desc: 'Knowledge of a variety of data-interchange formats',
+                    desc: 'Knowledge of a variety of Javascript frameworks',
                     details: [
-                        'XML',
-                        'JSON',
-                        'SOAP'
+                        'Express',
+                        'Mongoose',
+                        'Angular',
+                        'Ember'
                     ]
                 },
                 {
